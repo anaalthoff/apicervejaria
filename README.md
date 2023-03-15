@@ -13,12 +13,14 @@ CREATE TABLE cervejaria (
 );
 
 Os dados adicionados são:
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES ('Heineken', 4.5, 'Lager', 'Holanda');
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES ('Corona', 5.2, 'Pielsen', 'México');
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES ('Patagônia', 4.2, 'Amber Ale', 'Argentina');
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES ('SaintBeer', 3.5, 'IPA', 'Brasil');
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES ('Duff Beer', 3.5, 'Pielsen', 'EUA');
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES ('Coruja', 3.5, 'Lager', 'Brasil');
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES ('Brugse Zot', 6.2, 'IPA', 'Bélgica').
+INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) 
+VALUES 
+    ('Heineken', 4.5, 'Lager', 'Holanda'), 
+    ('Corona', 5.2, 'Pielsen', 'México'), 
+    ('Patagônia', 4.2, 'Amber Ale', 'Argentina'), 
+    ('SaintBeer', 3.5, 'IPA', 'Brasil'), 
+    ('Duff Beer', 3.5, 'Pielsen', 'EUA'), 
+    ('Coruja', 3.5, 'Lager', 'Brasil'), 
+    ('Brugse Zot', 6.2, 'IPA', 'Bélgica');
 
 Para realizar as requisições, poderá utilizar o Postman.
