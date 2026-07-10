@@ -1,22 +1,15 @@
-# 🍺 API Cervejaria
+# API Cervejaria
 
 API desenvolvida em Node.js com banco de dados PostgreSQL hospedado no ElephantSQL.
 O objetivo é consultar informações de cervejas cadastradas, com endpoints para busca por nome, nacionalidade, tipo, ABV e pesquisas parciais.
 
-## 📂 Estrutura do Projeto
-api-cervejaria/
-```
-│── banco.js      # Conexão com o banco de dados PostgreSQL (ElephantSQL)
-│── server.js     # Servidor Express com os endpoints da API
-```
-
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - Node.js
 - Express
 - pg (node-postgres)
 - ElephantSQL (PostgreSQL cloud)
 
-## ⚙️ Configuração do Banco de Dados
+## Configuração do Banco de Dados
 
 Dentro do arquivo banco.js, adicione a URL da sua instância do ElephantSQL:
 `const banco = new pg.Client("SUA_URL_DO_ELEPHANTSQL")`
@@ -45,7 +38,7 @@ INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES
 ('Brugse Zot', 6.2, 'IPA', 'Bélgica');
 `
 
-## ▶️ Como Executar
+## Como Executar
 
 1. Clone este repositório:
 ```
@@ -64,7 +57,7 @@ node server.js
 O servidor estará rodando em:
 `http://localhost:3000`
 
-## 📌 Endpoints
+## Endpoints
 - Buscar cerveja pelo nome exato
 `GET /buscar-nome/:nome`
 
@@ -80,7 +73,7 @@ O servidor estará rodando em:
 - Buscar cervejas pelo nome parcial
 `GET /buscar-nome-parcial/:nome`
 
-## 🧪 Testando a API
+## Testando a API
 
 Você pode utilizar o Postman ou Insomnia para realizar as requisições.
 Basta configurar os métodos HTTP (GET) e chamar os endpoints listados acima.
