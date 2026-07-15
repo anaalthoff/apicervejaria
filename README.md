@@ -15,7 +15,8 @@ Dentro do arquivo banco.js, adicione a URL da sua instância do ElephantSQL:
 `const banco = new pg.Client("SUA_URL_DO_ELEPHANTSQL")`
 
 Crie a tabela cervejaria no seu banco de dados:
-`
+
+```sql
 CREATE TABLE cervejaria (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
@@ -23,20 +24,23 @@ CREATE TABLE cervejaria (
     tipo VARCHAR(255) NOT NULL,
     nacionalidade VARCHAR(255) NOT NULL
 );
-`
+```
 
-Insira alguns dados iniciais:
+- Inserir os dados iniciais
 
-`
-INSERT INTO cervejaria (nome, abv, tipo, nacionalidade) VALUES
-('Heineken', 4.5, 'Lager', 'Holanda'),
-('Corona', 5.2, 'Pielsen', 'México'),
-('Patagônia', 4.2, 'Amber Ale', 'Argentina'),
-('SaintBeer', 3.5, 'IPA', 'Brasil'),
-('Duff Beer', 3.5, 'Pielsen', 'EUA'),
-('Coruja', 3.5, 'Lager', 'Brasil'),
-('Brugse Zot', 6.2, 'IPA', 'Bélgica');
-`
+Após criar a tabela, execute o script abaixo para popular o banco de dados:
+
+```sql
+INSERT INTO cervejaria (nome, abv, tipo, nacionalidade)
+VALUES
+    ('Heineken', 4.5, 'Lager', 'Holanda'),
+    ('Corona', 5.2, 'Pilsen', 'México'),
+    ('Patagonia', 4.2, 'Amber Ale', 'Argentina'),
+    ('Saint Beer', 3.5, 'IPA', 'Brasil'),
+    ('Duff Beer', 3.5, 'Pilsen', 'Estados Unidos'),
+    ('Coruja', 3.5, 'Lager', 'Brasil'),
+    ('Brugse Zot', 6.2, 'IPA', 'Bélgica');
+```
 
 ## Como Executar
 
